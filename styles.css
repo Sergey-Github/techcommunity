@@ -27,6 +27,10 @@ body {
 }
 
 .main {
-	margin-top: 51px;
-	font-size: 100px;
+	margin-top: 55px;
+	font-size: 3rem;
+}
+
+.welcome_block {
+	display: flex;
 }
