@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #efefef;
+	color: #2c2c2c;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+.section h2 {
+	font-size: 2.3rem;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #efefef;
+	border-bottom: 2px solid #cecece;
+}
+
+.header .top_menu {
+	display: flex;
+	justify-content: center;
+}
+
+.top_menu .menu_item {
+	padding: 15px 20px;
+}
+
+.top_menu .menu_item a {
+	color: blue;
+}
+
+.main {
+	margin-top: 55px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2.5rem;
+}
+
+.main .section {
+	display: flex;
+	max-width: 1200px;
+}
+
+.main .welcome_block {
+	align-items: center;
+	padding: 100px 0;
+}
+
+.main .welcome_block .directions {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+}
+
+.welcome_block .direction_item {
+	display: flex;
+	align-items: center;
+	padding: 0 20px 20px 0;
+	color: #fff
+}
+
+.directions .web span {
+	background-color: #0953c2;
+}
+
+.directions .gamedev span {
+	background-color: #eb1c1c;
+}
+
+.directions .mobile span{
+	background-color: #14b746;
+}
+
+.directions .interface span {
+	background-color: #630cc2;
+}
+
+.directions .web svg {
+	fill: #0953c2;
+}
+
+.directions .gamedev svg {
+	fill: #eb1c1c;
+}
+
+.directions .mobile svg {
+	fill: #14b746;
+}
+
+.directions .interface svg {
+	fill: #630cc2;
+}
+
+.direction_item svg {
+	width: 40px;
+	fill: #fff;
+	padding-right: 5px
+}
+
+.main .welcome_block .welcome_text {
+	flex: 2 1 auto;
+}
+
+/*	Directions block	*/
+
+.section h1 {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.direction_block {
+	flex-direction: column;
+}
+
+.direction_block .directions {
+	display: flex;
+	flex-wrap: wrap;
+}
