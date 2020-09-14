@@ -5,9 +5,23 @@
 
 body {
 	background-color: #efefef;
+	background: url('../810.png');
 	color: #2c2c2c;
 	font-family: monospace;
 	font-size: 18px;
+}
+
+li {
+	padding-bottom: 4px;
+}
+
+li > ul {
+	list-style: none;
+	padding: 0 0 15px 15px;
+}
+
+.inner_list {
+	list-style: none;
 }
 
 .section h2 {
@@ -41,6 +55,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	font-size: 2.5rem;
+	padding: 0 5px;
 }
 
 .main .section {
@@ -63,7 +78,10 @@ body {
 	display: flex;
 	align-items: center;
 	padding: 0 20px 20px 0;
-	color: #fff
+}
+
+.directions .direction_item span {
+	color: #fff;
 }
 
 .directions .web span {
@@ -100,6 +118,7 @@ body {
 
 .direction_item svg {
 	width: 40px;
+	height: 47px;
 	fill: #fff;
 	padding-right: 5px
 }
@@ -115,11 +134,126 @@ body {
 	padding-bottom: 40px;
 }
 
-.direction_block {
+.direction_block, .information_block {
 	flex-direction: column;
+	width: 100%;
 }
 
 .direction_block .directions {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.direction_block .direction_item {
+	max-width: 375px;
+	padding-right: 20px;
+}
+
+.direction_block .direction_item .caption {
+	display: flex;
+}
+
+.direction_block .direction_item .body {
+	padding: 10px 0 20px 45px;
+	font-size: 1.2rem;
+	font-family: serif;
+}
+
+/*	Info: learning and conditions	*/
+
+.information_block,
+.contacts_block {
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.information_block .items {
+	max-width: 650px;
+	padding-left: 20px;
+	font-size: 1.2rem;
+}
+
+.information_block .items .item {
+	flex: 1 1 auto;
+	padding: 10px;
+}
+
+.circles {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 40px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.circle {
+	width: 10px;
+	height: 10px;
+	background-color: #0953c2;
+	border-radius: 50%;
+}
+
+/*	Contacts	*/
+
+.contacts_block .invitation_text {
+	font-size: 1.5rem;
+}
+
+.contacts_block .ways {
+	padding: 20px 0;
+}
+
+.contacts_block .ways svg {
+	padding: 5px;
+	border-radius: 50%;
+	border: 1px solid #0953c2;
+	width: 30px;
+	height: 30px;
+	fill: #0953c2;
+}
+
+.contacts_block .form {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	max-width: 750px;
+}
+
+.contacts_block .form label {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+	font-size: 1.2rem;
+}
+
+.contacts_block .form .req_sign {
+	color: #8714b7;
+}
+
+.contacts_block .form input,
+.contacts_block .form textarea,
+.contacts_block .form button {
+	font-size: 1.2rem;
+	padding: 7px;
+	border: 1px solid #8714b7;
+	background-color: #efefef;
+}
+
+.contacts_block .form button {
+	border: none;
+	background: #8714b7;
+	padding: 12px;
+	color: #fff;
+	align-self: center;
+}
+
+/*	Footer	*/
+
+.footer {
+	border-top: 1px solid gray;
+	padding: 10px;
+	text-align: center;
 }
