@@ -32,8 +32,8 @@ li > ul {
 	position: fixed;
 	width: 100%;
 	top: 0;
-	background-color: #efefef;
-	border-bottom: 2px solid #cecece;
+	background-color: #fff;
+	border-bottom: 1px solid #dfdede;
 }
 
 .header .top_menu {
@@ -61,6 +61,7 @@ li > ul {
 .main .section {
 	display: flex;
 	max-width: 1200px;
+	background: rgba(255, 255, 255, .2);
 }
 
 .main .welcome_block {
@@ -239,7 +240,7 @@ li > ul {
 	font-size: 1.2rem;
 	padding: 7px;
 	border: 1px solid #8714b7;
-	background-color: #efefef;
+	background-color: #fefefe;
 }
 
 .contacts_block .form button {
@@ -256,4 +257,49 @@ li > ul {
 	border-top: 1px solid gray;
 	padding: 10px;
 	text-align: center;
+}
+
+/*	media queries	*/
+
+@media (max-width: 1030px) {
+
+	.main .welcome_block {
+		padding-top: 20px;
+	}
+
+}
+
+@media (max-width: 1106px) {
+	.direction_block .directions {}
+}
+
+@media (max-width: 902px) {
+
+	.section h1 {
+		/*text-align: initial;*/
+		padding-bottom: 20px;
+	}
+
+	.main .welcome_block {
+		flex-direction: column;
+		padding-bottom: 40px;
+		/*align-items: initial;*/
+	}
+
+	.main .welcome_block .welcome_text {
+		text-align: center;
+		padding-bottom: 45px;	
+	}
+
+	.main .welcome_block .directions {
+		order: 1;
+		justify-content: center;
+	}
+
+}
+
+@media (max-width: 601px) {
+	.main .welcome_block .directions {
+		/*display: block;*/
+	}
 }
