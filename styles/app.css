@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -36,17 +37,32 @@ li > ul {
 	border-bottom: 1px solid #dfdede;
 }
 
-.header .top_menu {
+.header .top_menu,
+.top_menu .menu_items {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .top_menu .menu_item {
 	padding: 15px 20px;
+	text-align: center;
+	color: blue;
 }
 
-.top_menu .menu_item a {
-	color: blue;
+.top_menu .menu_button {
+	border-radius: 50%;
+	border: 1px solid #0953c2;
+	padding: 10px;
+	display: none;
+}
+
+.top_menu .menu_button .line {
+	width: 23px;
+	height: 5px;
+	background: #0953c2;
+	margin: 2px 0;
 }
 
 .main {
@@ -201,6 +217,7 @@ li > ul {
 
 .contacts_block .invitation_text {
 	font-size: 1.5rem;
+	text-align: center;
 }
 
 .contacts_block .ways {
@@ -208,11 +225,11 @@ li > ul {
 }
 
 .contacts_block .ways svg {
-	padding: 5px;
+	padding: 8px;
 	border-radius: 50%;
 	border: 1px solid #0953c2;
-	width: 30px;
-	height: 30px;
+	width: 45px;
+	height: 45px;
 	fill: #0953c2;
 }
 
@@ -298,8 +315,41 @@ li > ul {
 
 }
 
+@media (max-width: 710px) {
+	.information_block .items {
+		padding-left: 35px;
+	}
+}
+
 @media (max-width: 601px) {
 	.main .welcome_block .directions {
 		/*display: block;*/
+	}
+}
+
+@media(max-width: 505px) {
+	.header .top_menu {
+		flex-direction: column;
+		padding: 8px 0;
+	}
+
+	.top_menu .menu_items {
+		display: none;
+		flex-direction: column;
+	} 
+
+	.top_menu .menu_item {
+		border-bottom: 1px solid #e1e1e1;
+		width: 100%;
+	}
+
+	.top_menu .menu_button {
+		display: block;
+	}
+}
+
+@media (max-width: 375px) {
+	.section h1 {
+		font-size: 3.3rem;
 	}
 }

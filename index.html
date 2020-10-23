@@ -3,16 +3,23 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles/app.css">
-	<link rel="stylesheet" type="text/css" href="styles/all.min.css">
+	<script src="js/app.js" defer></script>
 	<title>IT-сообщество Tech</title>
 </head>
 <body>
 	<header class="header">
 		<div class="top_menu">
-			<div class="menu_item"><a href="#directions">Направления</a></div>
-			<div class="menu_item"><a href="#learning">Порядок обучения</a></div>
-			<div class="menu_item"><a href="#conditions">Требования и условия</a></div>
-			<div class="menu_item"><a href="#">Контакты</a></div>
+			<div class="menu_button">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="menu_items">
+				<a class="menu_item" href="#directions">Направления</a>
+				<a class="menu_item" href="#learning">Порядок обучения</a>
+				<a class="menu_item" href="#conditions">Требования и условия</a>
+				<a class="menu_item" href="#contacts">Контакты</a>
+			</div>
 		</div>
 	</header>
 
@@ -64,8 +71,7 @@
 								<ul>
 									<li>PHP (Symfony)</li>
 									<li>NodeJS</li>
-									<li>MySQL</li>
-									<li>PostgreSQL</li>
+									<li>DB: MySQL, PostgreSQL</li>
 									<li>Redis</li>
 									<li>RabbitMQ</li>
 									<li>ElasticSearch</li>
@@ -149,7 +155,7 @@
 					</li>
 					<li class="item">
 						<b>Коммерциализация</b><br>
-						При достижении проекта стадии минимально жизнеспособного продукта, выпускаем его в свет. Условия монетизации и коммерциализации обсуждается индивидульно внутри команды.
+						При достижении проекта стадии минимально жизнеспособного продукта, выпускаем его в свет. Условия монетизации и коммерциализации обсуждается индивидуально внутри команды.
 					</li>
 				</ol>
 			</div>
@@ -192,7 +198,11 @@
 					<input type="text" name="directions">
 				</label>
 				<label>
-					<span>О себе (пару слов о ваших познаниях и увлечениях)</span>
+					<span><span class="req_sign">*</span> Как с тобой связаться? (telegram, vk, mail...):</span>
+					<input type="text" name="directions">
+				</label>
+				<label>
+					<span>О себе (пару слов о познаниях и увлечениях)</span>
 					<textarea name="about"></textarea>
 				</label>
 				<button type="button">Отправить</button>
